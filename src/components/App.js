@@ -7,11 +7,13 @@ class App extends Component {
     super();
     this.state = {
       newDate: '',
+      birthday: '1992-06-21',
     };
   }
 
   changeBirthday() {
     console.log(this.state);
+    this.setState({ birthday: this.state.newDate });
   }
   render() {
     return (
